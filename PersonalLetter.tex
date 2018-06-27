@@ -1,0 +1,36 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[left=2.5cm,top=2cm,right=2.5cm,bottom=2.5cm]{cv-style}   
+       % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+ \usepackage[hidelinks]{hyperref} 
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
+%\RequirePackage[left=2.5cm,top=2cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\geometry{left=2.5cm,right=2.5cm}
+\begin{document}
+
+\header{Martin}{Söderén}
+       {Master of Science in Computer Science and Engineering}        % Your name
+\vspace{10mm}
+\\
+Dear Sir or Madam
+\\
+\\
+I just finished my master thesis at the world renounced CERN research organization which is titled "Online Transverse Beam Instability Detection in the LHC". It mixes several different research field such as high-energy particle accelerators physics, digital signal processing, and parallel programming. This was required since an understanding of transverse instabilities in particle accelerators was required to fully analyze them together with knowledge on how to process the raw data acquired from the LHC. To handle the vast amount of data, a knowledge about parallel computing was required. I deeply enjoy mixing knowledge from different fields and putting them all together in a product which can help other people in their jobs, life or personal projects. Together with my thesis, I created a system that could detect instabilities in the LHC which generates a hardware trigger that observation equipment around the LHC listens to. This allows observation buffers to be stored for later analysis by physicists at CERN. I also created a fixed display in the control room which allows the operators to monitor the transverse activity in real-time.
+\\
+\\
+I have been at CERN for a bit over a year and during this time I have developed the instability detection system, written my thesis and developed a system for long spectrum analysis of the beam position. I have also developed a system for general data buffer acquisition and compression, a system for data extraction on post-mortem event in the LHC and a control system which allows the transverse feedback system of the LHC to be used for exciting the beam. When I am not working I spend most of my time working on private programming projects \footnote{https://github.com/marso329}, snowboarding and motorbiking. 
+\\
+\\
+My field of expertise is parallel computing but I do enjoy learning new traits. I enjoy working with electronics and mechanical engineering. During my time at university, I was a part of a mechanical engineering club where I learned how to weld, mill and lathe. This allowed me to be a TA in a few design courses\footnote{https://www.iei.liu.se/machine/courses/tmkt98?l=sv} where I helped students with both their designs and manufacturing. I was also a part of the formula student team\footnote{http://www.liuformulastudent.se/} where I was vice president and chief of the electronics team.
+\\
+\\
+I have always enjoyed teaching and I had the privilege to construct a project for a course\footnote{https://gitlab.ida.liu.se/sille914/TDDD63-LEGO-public} in introductory programming. The goal of the project was to give the students a life-like situation where they were given a contract to design a product for a client. In my project, their goal was to design a robotic dog. The received a Lego EV3 kit with used a custom Linux kernel which I had prepared for them together with a Python API which allowed them to remotely control all motors and read values from the sensors. The first part of the course was to do some exercises which I had created for them and then create a guard dog that would patrol a room. The feedback was great and most students really enjoyed the course. I was supervising 36 students in groups of 3 people. During this course I introduced students to GUI programming, debugging, object-oriented programming and code versioning tools to name a few. 
+\\
+\\
+I have already worked with stream processing, both at CERN and at SAAB where I developed a framework for analyzing the gigabit data-stream which was produced by the radar in the new Gripen E. I find it an interesting subject and I believe it will become more important since the amount of data that is being created increases for every day. It would be favorable to work close to the industry to see how the system is being used to improve it. 
+\\
+\\
+The reason why I am applying for this Ph.D. position is that I enjoy doing research in parallel computing, I enjoy working close to the industry so I can see the impact of the research and I love teaching. 
+\end{document}
