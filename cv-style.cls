@@ -53,7 +53,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont{Roboto-Regular}[Path=fonts/]
 \newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
@@ -129,7 +129,7 @@
 % Structure %
 %----------------------------------------------------------------------------------------
 \RequirePackage{parskip}
-
+\RequirePackage[compact]{titlesec}
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
@@ -140,6 +140,7 @@
         orange\or%
         green\or%
         purple\or%
+        cyan\or%
         aquamarine\else%
         headercolor\fi%
     } #1#2#3%
@@ -147,7 +148,9 @@
   \stepcounter{colorCounter}%
 }
 
+
 \renewcommand{\section}[1]{
+
   {\par\vspace{\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
@@ -156,9 +159,18 @@
   \par\vspace{\parskip}}
 }
 
+%\renewcommand\section{%
+%  \@startsection{section}% name
+%    {1}% level
+%    {0pt}% indent
+%    {-3.5ex plus -1ex minus -.2ex}% beforeskip
+%    {2.3ex plus.2ex}% afterskip
+%    {\Large\headingfont}% style
+%  }
+
 \renewcommand{\subsection}[2]{
   \par\vspace{.5\parskip}%
-  \Large\headingfont\color{headercolor} #2%
+  \Large\headingfont\color{\@sectioncolor} #2%
   \par\vspace{.25\parskip}%
 }
 
@@ -198,7 +210,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1, 1.87)
+  \begin{textblock}{4.0}(0.8, 1.87)
   \begin{flushright}
   \obeycr
 }{%
